@@ -9,7 +9,15 @@ adduser monutilisateur
 usermod -aG sudo monutilisateur
 ```
 
-4. Changez d'utilisateur pour continuer avec l'utilisateur nouvellement créé :
+43. Changez d'utilisateur pour continuer avec l'utilisateur nouvellement créé :
 ```
 su - monutilisateur
 ```
+
+# Étape 2 : Installation de Node.js et npm
+1. Télécharger le dépôt en replaçant "18" par la version de nodejs que vous souhaitez. Les versions se trouve [ici](https://github.com/nodesource/distributions/blob/master/README.md)
+```
+cd ~
+curl -sL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh
+```
+
