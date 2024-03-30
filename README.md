@@ -82,5 +82,5 @@ Depuis n8n, vous pouvez lancer votre script avec token ou sans token. Vous avez 
 ![image de n8n](https://nocodeskills.fr/wp-content/uploads/2024/03/n8n.png)
 
 # Création des scripts Pupperteer
-Pour ajouter des nouveaux script de scraping, il faut insérer dans le dossier `scripts` un nouveau fichier NouveauScript.js
+Pour ajouter des nouveaux script de scraping, il faut insérer dans le dossier `scripts` un nouveau fichier (ex : NouveauScript.js)
 
