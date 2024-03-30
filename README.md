@@ -64,11 +64,19 @@ nano server.js
 mkdir script
 ```
 
-## Étape 6 : Exécution de Votre Serveur
+## Étape 6 : Exécution de votre Server.js
 1. Lancez votre serveur Node.js avec :
 ```
 cd ~
 node server.js
 ```
 
+## Étape 7 : Exécution de votre script
+Pour exécuter le script Puppeteer, vous devez tapder ceci dans votre navigateur (remplacer mon-ip par votre adresse ip serveur) :
+```
+http://mon-ip:3000/script1.js
+````
+
+# Création des scripts Pupperteer
+Pour ajouter des nouveaux script de scraping, il faut insérer dans le dossier `scripts` un nouveau fichier NouveauScript.js
 
