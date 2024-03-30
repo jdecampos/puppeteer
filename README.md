@@ -52,3 +52,22 @@ npm init -y
 ```
 npm install express puppeteer
 ```
+
+# Étape 5 : Création du fichier server.js et des Scripts
+1. Créez le fichier `server.js`` avec le code pour lancer le serveur Express et pour router les requêtes vers les scripts Puppeteer. (à télécharger à la racine)
+```
+nano server.js
+```
+2. Créer un dossier scripts
+```
+mkdir script
+```
+
+# Étape 6 : Exécution de Votre Serveur
+1. Lancez votre serveur Node.js avec :
+```
+cd ~
+node server.js
+```
+
+
