@@ -1,4 +1,3 @@
-  GNU nano 6.2                                                                                                                            script1.js                                                                                                                                      
 const puppeteer = require('puppeteer');
 
 exports.run = async (req, res) => {
