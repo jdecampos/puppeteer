@@ -55,7 +55,7 @@ npm install express puppeteer
 ```
 
 ## Étape 5 : Création du fichier server.js et des Scripts
-1. Créez le fichier `server.js`` avec le code pour lancer le serveur Express et pour router les requêtes vers les scripts Puppeteer. (à télécharger à la racine)
+1. Créez le fichier `server.js`` avec le code pour lancer le serveur Express et pour router les requêtes vers les scripts Puppeteer. (à télécharger à la racine et penser à bien changer le token)
 ```
 nano server.js
 ```
@@ -76,6 +76,7 @@ Pour exécuter le script Puppeteer, vous devez tapder ceci dans votre navigateur
 ```
 http://mon-ip:3000/script1.js
 ````
+# Scraper depuis n8n
 
 # Création des scripts Pupperteer
 Pour ajouter des nouveaux script de scraping, il faut insérer dans le dossier `scripts` un nouveau fichier NouveauScript.js
