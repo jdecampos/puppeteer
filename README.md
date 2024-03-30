@@ -71,12 +71,15 @@ cd ~
 node server.js
 ```
 
-## Étape 7 : Exécution de votre script
-Pour exécuter le script Puppeteer, vous devez tapder ceci dans votre navigateur (remplacer mon-ip par votre adresse ip serveur) :
+## Étape 7 : Exécution de votre script (sans token)
+Pour exécuter le script Puppeteer, vous devez taper ceci dans votre navigateur (remplacer mon-ip par votre adresse ip serveur) ou même depuis n8n. Vous n'avez pas besoin de token. C'est un moyen de tester vos scripts rapidement :
 ```
 http://mon-ip:3000/script1.js
 ````
-# Scraper depuis n8n
+# Scraper depuis n8n avec token
+Depuis n8n, vous pouvez lancer votre script avec token ou sans token. Vous avez juste à utiliser le node HTTP Request et d'ajouter un header d'authentification
+
+![image de n8n](https://share.zight.com/RBukxjjW)
 
 # Création des scripts Pupperteer
 Pour ajouter des nouveaux script de scraping, il faut insérer dans le dossier `scripts` un nouveau fichier NouveauScript.js
