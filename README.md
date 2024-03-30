@@ -79,7 +79,7 @@ http://mon-ip:3000/script1.js
 # Scraper depuis n8n avec token
 Depuis n8n, vous pouvez lancer votre script avec token ou sans token. Vous avez juste à utiliser le node HTTP Request et d'ajouter un header d'authentification
 
-![image de n8n](https://share.zight.com/RBukxjjW)
+![image de n8n]([https://share.zight.com/RBukxjjW](https://nocodeskills.fr/wp-content/uploads/2024/03/n8n.png))
 
 # Création des scripts Pupperteer
 Pour ajouter des nouveaux script de scraping, il faut insérer dans le dossier `scripts` un nouveau fichier NouveauScript.js
