@@ -10,7 +10,7 @@ adduser monutilisateur
 usermod -aG sudo monutilisateur
 ```
 
-43. Changez d'utilisateur pour continuer avec l'utilisateur nouvellement créé :
+3. Changez d'utilisateur pour continuer avec l'utilisateur nouvellement créé :
 ```
 su - monutilisateur
 ```
