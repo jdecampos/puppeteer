@@ -1,4 +1,4 @@
-# Installation de Pupperteer
+# Installation de Puppeteer
 ## Étape 1 : Préparation de l'Environnement
 1. Créez un nouvel utilisateur pour exécuter les scripts sans privilèges root. Remplacez monutilisateur par le nom d'utilisateur que vous souhaitez.
 ```
