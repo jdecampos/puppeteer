@@ -61,13 +61,14 @@ nano server.js
 ```
 2. Créer un dossier scripts
 ```
-mkdir script
+mkdir scripts
 ```
 
 ## Étape 6 : Exécution de votre Server.js
 1. Lancez votre serveur Node.js avec :
 ```
 cd ~
+cd puppeteer
 node server.js
 ```
 
