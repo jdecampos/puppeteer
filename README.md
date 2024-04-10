@@ -88,27 +88,31 @@ Pour ajouter des nouveaux script de scraping, il faut insérer dans le dossier `
 # Avoir du persistant sur server.js
 Une fois que vous avez fini de créer et tester vos scripts, il faudra faire en sorte qu'à la fermeture du terminal, le node server.js soit toujours actif. Voici comment rendre le script persistant même après redémarrage du serveur
 
-## Installation de PM2 : Si PM2 n'est pas déjà installé sur votre système, vous pouvez l'installer globalement via npm :
+## Installation de PM2 
+Si PM2 n'est pas déjà installé sur votre système, vous pouvez l'installer globalement via npm :
 ```
 sudo npm install pm2 -g
 
 ```
 
-## Démarrage de votre application avec PM2 : Naviguez dans le répertoire de votre projet et utilisez la commande suivante pour démarrer votre script avec PM2 :
+## Démarrage de votre application avec PM2
+Naviguez dans le répertoire de votre projet et utilisez la commande suivante pour démarrer votre script avec PM2 :
 ```
 cd puppeteer
 pm2 start server.js --name "nomDeVotreApplication"
 ```
 Remplacez "nomDeVotreApplication" par le nom que vous souhaitez donner à votre processus. Cela peut être utile pour identifier le processus plus tard avec d'autres commandes PM2.
 
-## Démarrage automatique au redémarrage du système : PM2 peut configurer votre application pour qu'elle redémarre automatiquement si votre serveur redémarre. Utilisez la commande suivante pour configurer cela :
+## Démarrage automatique au redémarrage du système
+PM2 peut configurer votre application pour qu'elle redémarre automatiquement si votre serveur redémarre. Utilisez la commande suivante pour configurer cela :
 ```
 pm2 startup
 ```
 Et voilà, vous pouvez fermer votre terminal et même redémarrer votre serveur, le script sera toujours actif :)
 
-## Gestion de l'application pm2 : Voici quelques commandes PM2 courantes pour gérer votre application :
-Lister toutes les applications : `pm2 list`
-Arrêter une application : `pm2 stop nomDeVotreApplication`
-Redémarrer une application : `pm2 restart nomDeVotreApplication`
-Voir les logs : `pm2 logs nomDeVotreApplication`
+## Gestion de l'application pm2
+Voici quelques commandes PM2 courantes pour gérer votre application :
+Lister toutes les applications : `pm2 list` 
+Arrêter une application : `pm2 stop nomDeVotreApplication` 
+Redémarrer une application : `pm2 restart nomDeVotreApplication` 
+Voir les logs : `pm2 logs nomDeVotreApplication` 
