@@ -112,7 +112,7 @@ Et voilà, vous pouvez fermer votre terminal et même redémarrer votre serveur,
 
 ## Gestion de l'application pm2
 Voici quelques commandes PM2 courantes pour gérer votre application :
-Lister toutes les applications : `pm2 list` 
-Arrêter une application : `pm2 stop nomDeVotreApplication` 
-Redémarrer une application : `pm2 restart nomDeVotreApplication` 
-Voir les logs : `pm2 logs nomDeVotreApplication` 
+* Lister toutes les applications : `pm2 list` 
+* Arrêter une application : `pm2 stop nomDeVotreApplication` 
+* Redémarrer une application : `pm2 restart nomDeVotreApplication` 
+* Voir les logs : `pm2 logs nomDeVotreApplication` 
