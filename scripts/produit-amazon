@@ -1,0 +1,42 @@
+const puppeteer = require('puppeteer');
+
+exports.run = async (req, res) => {
+    // Vérifier si l'URL du produit est fournie
+    if (!req.query['url']) {
+        return res.status(400).json({ error: 'Le paramètre url est requis.' });
+    }
+
+    const productUrl = req.query['url'];
+
+    try {
+        const browser = await puppeteer.launch({
+            headless: true,
+            args: ['--no-sandbox', '--disable-setuid-sandbox']
+        });
+        const page = await browser.newPage();
+        await page.setViewport({ width: 1280, height: 800 });
+
+        // Aller à l'URL du produit
+        await page.goto(productUrl, { waitUntil: 'networkidle2' });
+
+        // Extraire les données de la fiche produit
+        const details = await page.evaluate(() => {
+            const image = document.querySelector('img#landingImage') ? document.querySelector('img#landingImage').src : null;
+            const rating = document.querySelector('span.a-icon-alt') ? document.querySelector('span.a-icon-alt').textContent.trim() : null;
+            const reviewCount = document.querySelector('#acrCustomerReviewText') ? document.querySelector('#acrCustomerReviewText').textContent.trim() : null;
+            const description = document.querySelector('#feature-bullets ul') ? document.querySelector('#feature-bullets ul').textContent.trim() : null;
+
+            return { image, rating, reviewCount, description };
+        });
+
+        console.log(details); // Affiche les données extraites
+
+        await browser.close();
+
+        // Envoyer les données en réponse HTTP
+        res.json(details);
+    } catch (error) {
+        console.error('Error running scrape:', error);
+        res.status(500).json({ error: 'Erreur lors de l’exécution du scraping de la fiche produit.' });
+    }
+};
